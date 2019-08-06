@@ -15,7 +15,7 @@ def hello_world():
 dag = DAG(
         "lesson1.exercise2",
         start_date=datetime.datetime.now() - datetime.timedelta(days=2),
-        schedule_interval=@monthly
+        schedule_interval="@monthly"    
        )
 
 task = PythonOperator(
